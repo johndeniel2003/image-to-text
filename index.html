@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f59b89817d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>IMAGE TO TEXT CONVERTER</h1>
+    </div>
+    <div class="inputBox">
+    <input type="file" id="imgFile" accept="image/png, image/jpg" class="input">
+    <div class="inputOverlay" id="uploadBtn">
+        <i class="fa-solid fa-upload"></i>
+        <span>Browse file to upload or drag a picture</span>
+    </div>
+    
+    </div>
+    <button class="reload" id="convertAnother" onclick="reload()">Convert another</button>
+    <span class="loader" id="loader"></span>
+    <div class="result">
+        <div class="result-header">
+            <span>Result</span>
+        </div>
+        <div class="result-area" id="result-area">
+            
+    </div>
+    <button id="copyText" onclick="copyText()"><i class="fa-solid fa-copy"></i></button>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
